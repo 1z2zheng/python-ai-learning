@@ -1,0 +1,48 @@
+import fs from 'node:fs/promises';
+import {Workbook, SpreadsheetFile} from 'file:///C:/Users/29148/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs';
+
+const dir = 'D:/C261008001/output/review_analysis';
+const rows = JSON.parse(await fs.readFile(`${dir}/review_ai_annotations.json`, 'utf8'));
+const headers = Object.keys(rows[0]);
+const wb = Workbook.create();
+const sheet = wb.worksheets.add('AI辅助标注');
+sheet.showGridLines = false;
+sheet.getRange('A2').values = [['评论AI辅助标注与人工复核']];
+sheet.getRange('A3').values = [['标签来源：AI逐条阅读。未完成独立人工标注，不能用于计算独立验证准确率。']];
+sheet.getRange('A4').values = [['阅读C列正文及D至L列AI标签；复核后填写M至Q列，记录复核人及日期。']];
+sheet.getRange('A5').values = [['来源：项目原始评论标注模板；编号与哈希ID保留。未涉及表示正文未评价该属性。']];
+sheet.getRange(`A7:U${rows.length+7}`).values = [headers, ...rows.map(row=>headers.map(key=>row[key]))];
+sheet.getRange(`A7:U${rows.length+7}`).format.font = {name:'Microsoft YaHei',size:10};
+sheet.getRange('A2').format.font = {name:'Microsoft YaHei',size:14,bold:true};
+sheet.getRange('A3:A5').format.font = {name:'Microsoft YaHei',size:10};
+sheet.getRange('A3:A5').format.rowHeight=23;
+sheet.getRange(`A7:U${rows.length+7}`).format.columnWidth=16;
+sheet.getRange(`A7:U${rows.length+7}`).format.verticalAlignment='top';
+sheet.getRange(`A8:U${rows.length+7}`).format.rowHeight=140;
+sheet.getRange(`C7:C${rows.length+7}`).format.columnWidth=78;
+sheet.getRange(`C8:C${rows.length+7}`).format.wrapText=true;
+sheet.getRange(`E7:E${rows.length+7}`).format.columnWidth=26;
+sheet.getRange(`E8:E${rows.length+7}`).format.wrapText=true;
+sheet.getRange(`L7:L${rows.length+7}`).format.columnWidth=48;
+sheet.getRange(`L8:L${rows.length+7}`).format.wrapText=true;
+sheet.getRange(`N7:N${rows.length+7}`).format.columnWidth=36;
+sheet.getRange(`Q7:Q${rows.length+7}`).format.columnWidth=40;
+sheet.getRange(`T7:T${rows.length+7}`).format.columnWidth=38;
+sheet.getRange(`U7:U${rows.length+7}`).format.columnWidth=32;
+sheet.getRange('A7:U7').format={fill:'#284B63',font:{name:'Microsoft YaHei',size:10,bold:true,color:'#FFFFFF'},wrapText:true,rowHeight:40,horizontalAlignment:'center'};
+sheet.getRange(`M8:Q${rows.length+7}`).format.fill='#FFF3CD';
+sheet.getRange(`M8:M${rows.length+7}`).dataValidation={rule:{type:'list',values:['正向','负向','中性','混合']}};
+sheet.tables.add(`A7:U${rows.length+7}`,true,'AIAnnotationRecords');
+sheet.freezePanes.freezeRows(7);
+sheet.freezePanes.freezeColumns(2);
+for(let i=0;i<rows.length;i++){
+  const count=rows[i]['评论正文'].length;
+  sheet.getRange(`A${i+8}:U${i+8}`).format.rowHeight=Math.max(70, Math.ceil(count/44)*15+20);
+}
+wb.recalculate();
+console.log((await wb.inspect({kind:'table',range:'AI辅助标注!A7:L10',include:'values',tableMaxRows:4,tableMaxCols:12,maxChars:3500})).ndjson);
+const preview=await wb.render({sheetName:'AI辅助标注',range:'A7:L10',scale:1,format:'png'});
+await fs.writeFile(`${dir}/ai_annotation_preview.png`,new Uint8Array(await preview.arrayBuffer()));
+const output=await SpreadsheetFile.exportXlsx(wb);
+await output.save(`${dir}/评论AI辅助标注待复核.xlsx`);
+console.log(JSON.stringify({rows:rows.length,output:`${dir}/评论AI辅助标注待复核.xlsx`}));

@@ -1,0 +1,57 @@
+{
+  "experiment": "fully_corrected_300_three_seed_repeated_training",
+  "dataset": "wheat_head_dataset_300",
+  "split": {
+    "train": 240,
+    "val": 30,
+    "test": 30
+  },
+  "standard_deviation": "sample_std_ddof_1",
+  "runs": [
+    {
+      "seed": 42,
+      "best_epoch": 35,
+      "miou": 0.8659464120864868,
+      "wheat_iou": 0.7677878737449646,
+      "wheat_precision": 0.8903555870056152,
+      "wheat_recall": 0.847963273525238,
+      "wheat_f1": 0.8686425089836121,
+      "checkpoint": "runs/wheat_head_300_fully_corrected/best.pt"
+    },
+    {
+      "seed": 123,
+      "best_epoch": 40,
+      "miou": 0.8632401823997498,
+      "wheat_iou": 0.7634094953536987,
+      "wheat_precision": 0.8811907768249512,
+      "wheat_recall": 0.8510023355484009,
+      "wheat_f1": 0.8658334612846375,
+      "checkpoint": "runs/wheat_head_300_seed123/best.pt"
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 39,
+      "miou": 0.8662464618682861,
+      "wheat_iou": 0.7684040665626526,
+      "wheat_precision": 0.88792884349823,
+      "wheat_recall": 0.8509318828582764,
+      "wheat_f1": 0.8690367937088013,
+      "checkpoint": "runs/wheat_head_300_seed2026/best.pt"
+    }
+  ],
+  "mean": {
+    "miou": 0.8651443521181742,
+    "wheat_iou": 0.7665338118871053,
+    "wheat_precision": 0.8864917357762655,
+    "wheat_recall": 0.8499658306439718,
+    "wheat_f1": 0.8678375879923502
+  },
+  "sample_std": {
+    "miou": 0.0016558696220756708,
+    "wheat_iou": 0.0027232221260541393,
+    "wheat_precision": 0.004748409772260441,
+    "wheat_recall": 0.0017346230586873278,
+    "wheat_f1": 0.0017467850487553472
+  },
+  "best_single_run_seed": 2026
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "experiment": "baseline",
+    "checkpoint_epoch": 40,
+    "miou": 0.8591842651367188,
+    "foreground_iou": 0.7581610083580017,
+    "foreground_precision": 0.8775251507759094,
+    "foreground_recall": 0.8478796482086182,
+    "foreground_f1": 0.8624477386474609
+  },
+  {
+    "experiment": "lowlight",
+    "checkpoint_epoch": 37,
+    "miou": 0.8588389754295349,
+    "foreground_iou": 0.7581448554992676,
+    "foreground_precision": 0.8643171191215515,
+    "foreground_recall": 0.8605656623840332,
+    "foreground_f1": 0.8624373078346252
+  },
+  {
+    "experiment": "multiscale",
+    "checkpoint_epoch": 40,
+    "miou": 0.8594841361045837,
+    "foreground_iou": 0.7591238021850586,
+    "foreground_precision": 0.8674331903457642,
+    "foreground_recall": 0.8587511777877808,
+    "foreground_f1": 0.8630703687667847
+  },
+  {
+    "experiment": "occlusion",
+    "checkpoint_epoch": 40,
+    "miou": 0.8564109802246094,
+    "foreground_iou": 0.7540351748466492,
+    "foreground_precision": 0.8620469570159912,
+    "foreground_recall": 0.8575090169906616,
+    "foreground_f1": 0.8597720265388489
+  },
+  {
+    "experiment": "full",
+    "checkpoint_epoch": 40,
+    "miou": 0.8549431562423706,
+    "foreground_iou": 0.7504836320877075,
+    "foreground_precision": 0.8846614360809326,
+    "foreground_recall": 0.8318787813186646,
+    "foreground_f1": 0.8574585914611816
+  }
+]

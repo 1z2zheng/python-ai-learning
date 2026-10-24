@@ -1,0 +1,11 @@
+[database]
+path = "data/esports_analysis.db"
+
+[application]
+timezone = "Asia/Shanghai"
+default_category = "mouse"
+
+[import]
+default_currency = "CNY"
+default_platform = "manual"
+

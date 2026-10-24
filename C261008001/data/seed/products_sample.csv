@@ -1,0 +1,17 @@
+platform,platform_product_id,category,brand,model,product_name,shop_name,product_url,image_url,is_active,connection_type,weight_g,polling_rate_hz,rgb,warranty_months,dpi_max,sensor_model,button_count,handedness,switch_type,switch_name,layout_size,key_count,actuation_mm,hot_swappable,list_price,sale_price,coupon_price,currency,promotion_text,collected_at
+manual,MOUSE-LOGI-001,mouse,Logitech G,G PRO X SUPERLIGHT 2,罗技 GPW 二代无线电竞鼠标,示例店铺,,,true,wireless_2_4g,60,2000,false,24,32000,HERO 2,5,symmetric,,,,,,,899,849,,CNY,,2026-09-08T10:00:00+08:00
+manual,MOUSE-LOGI-001,mouse,Logitech G,G PRO X SUPERLIGHT 2,罗技 GPW 二代无线电竞鼠标,示例店铺,,,true,wireless_2_4g,60,2000,false,24,32000,HERO 2,5,symmetric,,,,,,,899,829,799,CNY,示例优惠,2026-09-22T10:00:00+08:00
+manual,MOUSE-LOGI-001,mouse,Logitech G,G PRO X SUPERLIGHT 2,罗技 GPW 二代无线电竞鼠标,示例店铺,,,true,wireless_2_4g,60,2000,false,24,32000,HERO 2,5,symmetric,,,,,,,899,799,749,CNY,示例优惠,2026-10-08T10:00:00+08:00
+manual,MOUSE-RAZER-001,mouse,Razer,Viper V3 Pro,雷蛇毒蝰 V3 Pro 无线鼠标,示例店铺,,,true,wireless_2_4g,54,8000,false,24,35000,Focus Pro,6,symmetric,,,,,,,1199,1199,,CNY,,2026-09-08T10:00:00+08:00
+manual,MOUSE-RAZER-001,mouse,Razer,Viper V3 Pro,雷蛇毒蝰 V3 Pro 无线鼠标,示例店铺,,,true,wireless_2_4g,54,8000,false,24,35000,Focus Pro,6,symmetric,,,,,,,1199,1149,,CNY,,2026-09-22T10:00:00+08:00
+manual,MOUSE-RAZER-001,mouse,Razer,Viper V3 Pro,雷蛇毒蝰 V3 Pro 无线鼠标,示例店铺,,,true,wireless_2_4g,54,8000,false,24,35000,Focus Pro,6,symmetric,,,,,,,1199,1099,,CNY,,2026-10-08T10:00:00+08:00
+manual,KEY-ROG-001,keyboard,ROG,Falchion Ace HFX,ROG 夜魔极速版磁轴键盘,示例店铺,,,true,wired,643,8000,true,24,,,,,magnetic,磁轴,65%,68,0.1,false,1399,1399,,CNY,,2026-09-08T10:00:00+08:00
+manual,KEY-ROG-001,keyboard,ROG,Falchion Ace HFX,ROG 夜魔极速版磁轴键盘,示例店铺,,,true,wired,643,8000,true,24,,,,,magnetic,磁轴,65%,68,0.1,false,1399,1349,1299,CNY,示例优惠,2026-09-22T10:00:00+08:00
+manual,KEY-ROG-001,keyboard,ROG,Falchion Ace HFX,ROG 夜魔极速版磁轴键盘,示例店铺,,,true,wired,643,8000,true,24,,,,,magnetic,磁轴,65%,68,0.1,false,1399,1299,1199,CNY,示例优惠,2026-10-08T10:00:00+08:00
+manual,KEY-VGN-001,keyboard,VGN,V98 Pro,VGN V98 Pro 三模机械键盘,示例店铺,,,true,multi_mode,980,1000,true,12,,,,,mechanical,动力银轴,98%,97,1.2,true,399,379,,CNY,,2026-09-08T10:00:00+08:00
+manual,KEY-VGN-001,keyboard,VGN,V98 Pro,VGN V98 Pro 三模机械键盘,示例店铺,,,true,multi_mode,980,1000,true,12,,,,,mechanical,动力银轴,98%,97,1.2,true,399,359,,CNY,,2026-09-22T10:00:00+08:00
+manual,KEY-VGN-001,keyboard,VGN,V98 Pro,VGN V98 Pro 三模机械键盘,示例店铺,,,true,multi_mode,980,1000,true,12,,,,,mechanical,动力银轴,98%,97,1.2,true,399,329,,CNY,,2026-10-08T10:00:00+08:00
+manual,KEY-DAREU-001,keyboard,DAREU,A98 Pro II,达尔优 A98 Pro II 三模机械键盘,示例店铺,,,true,multi_mode,1100,1000,true,12,,,,,mechanical,天空轴,98%,98,2.0,true,599,569,,CNY,,2026-09-08T10:00:00+08:00
+manual,KEY-DAREU-001,keyboard,DAREU,A98 Pro II,达尔优 A98 Pro II 三模机械键盘,示例店铺,,,true,multi_mode,1100,1000,true,12,,,,,mechanical,天空轴,98%,98,2.0,true,599,529,499,CNY,示例优惠,2026-09-22T10:00:00+08:00
+manual,KEY-DAREU-001,keyboard,DAREU,A98 Pro II,达尔优 A98 Pro II 三模机械键盘,示例店铺,,,true,multi_mode,1100,1000,true,12,,,,,mechanical,天空轴,98%,98,2.0,true,599,499,469,CNY,示例优惠,2026-10-08T10:00:00+08:00
+

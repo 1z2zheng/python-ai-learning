@@ -1,0 +1,87 @@
+{
+  "project_id": "C260928003",
+  "status": "locked",
+  "locked_date": "2026-10-03",
+  "task": "wheat head semantic segmentation under low light, small targets and occlusion",
+  "final_architecture": "multiscale_unet",
+  "primary_model": {
+    "type": "three_seed_mean_logits_ensemble",
+    "checkpoints": [
+      {
+        "seed": 42,
+        "epoch": 34,
+        "path": "runs/ablation_multiscale_seed42/best.pt",
+        "sha256": "D31E4BD3592743AECE821B3DD301AEAF86CA171010F5DBC609F92BBB631D7C62"
+      },
+      {
+        "seed": 123,
+        "epoch": 40,
+        "path": "runs/ablation_multiscale_seed123/best.pt",
+        "sha256": "A7A528C2CA03F6D4DE86051BB3E0F64622D76A0458D34407B38C5A41AE59FC7B"
+      },
+      {
+        "seed": 2026,
+        "epoch": 38,
+        "path": "runs/ablation_multiscale_seed2026/best.pt",
+        "sha256": "B5FC8D620B6C32195AFE7A09FB2251CF8005AEA2459629B524207DD27A949EF2"
+      }
+    ],
+    "aggregation": "arithmetic mean of pixel logits followed by argmax"
+  },
+  "deployment_fallback": {
+    "type": "single_model",
+    "reason": "highest wheat-head recall among the three multiscale single models",
+    "path": "runs/ablation_multiscale_seed123/best.pt"
+  },
+  "input": {
+    "channel_mode": "RGB",
+    "image_size": 384,
+    "classes": ["background", "wheat_head"]
+  },
+  "final_metrics": {
+    "internal_test_50": {
+      "miou": 0.866291,
+      "wheat_iou": 0.770021,
+      "wheat_precision": 0.889420,
+      "wheat_recall": 0.851544,
+      "wheat_f1": 0.870070
+    },
+    "blind_holdout_30": {
+      "miou": 0.883734,
+      "wheat_iou": 0.798187,
+      "wheat_precision": 0.893561,
+      "wheat_recall": 0.882052,
+      "wheat_f1": 0.887769
+    },
+    "external_gwfss_100": {
+      "miou": 0.667228,
+      "wheat_iou": 0.413926,
+      "wheat_precision": 0.768616,
+      "wheat_recall": 0.472847,
+      "wheat_f1": 0.585499
+    }
+  },
+  "runtime_benchmark": {
+    "device": "NVIDIA GeForce RTX 5070",
+    "input_shape": [1, 3, 384, 384],
+    "precision": "automatic mixed precision",
+    "single_seed123": {
+      "parameters": 5559698,
+      "checkpoint_size_mb": 63.7633,
+      "mean_latency_ms": 2.8181,
+      "fps": 354.8447
+    },
+    "three_model_ensemble": {
+      "total_parameters_loaded": 16679094,
+      "total_checkpoint_size_mb": 191.2900,
+      "mean_latency_ms": 8.4944,
+      "fps": 117.7241
+    },
+    "scope": "forward pass plus argmax; excludes image decoding, resize, disk IO and visualization"
+  },
+  "limitations": [
+    "External-domain recall remains substantially lower than in-domain recall.",
+    "The primary-occlusion subset contains only four images and shows a slight decrease, so no claim of complete occlusion robustness is made.",
+    "The internal test set was used repeatedly during model development; blind and external evaluations are the stronger confirmation evidence."
+  ]
+}

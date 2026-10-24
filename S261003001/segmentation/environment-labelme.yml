@@ -1,0 +1,9 @@
+name: labelme312
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - Pillow>=10,<13
+      - labelme==7.7.0

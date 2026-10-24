@@ -1,0 +1,21 @@
+sku,connection_type,weight_g,polling_rate_hz,dpi_max,sensor_model,button_count,handedness,switch_type,switch_name,layout_size,key_count,actuation_mm,hot_swappable,rgb,source_url,source_note
+100059266494,wired,1136.3,1000,,,,,mechanical,Razer绿轴,100%,,,,1,https://mysupport.razer.com/app/answers/detail/a_id/13223/,雷蛇官方支持页与京东所选绿轴规格
+100041149481,wired,89,1000,25600,HERO 25K,13,right,,,,,,,0,https://www.logitechg.com/zh-cn/shop/p/g502-x-wired-lightforce,罗技官方产品页
+100105751409,wireless_2_4g,55,8000,26000,Focus X 26K,8,right,,,,,,,0,https://www.razer.com/gaming-mice/razer-deathadder-v3-hyperspeed,雷蛇官方页；8000Hz需另配HyperPolling接收器
+100102201664,multi_mode,54,8000,42000,ROG AimPoint Pro,7,right,,,,,,,1,https://rog.asus.com.cn/mice-mouse-pads/mice/wireless/rog-keris-ii-ace/spec/,ROG官方规格；无线原配加速器支持高回报率
+100058570772,multi_mode,54,1000,36000,ROG AimPoint,5,ambidextrous,,,,,,,1,https://rog.asus.com.cn/mice-mouse-pads/mice/ambidextrous/rog-harpe-ace-aim-lab-edition-model/spec/,ROG官方规格
+100010255665,wireless_2_4g,63,1000,25600,HERO 25K,5,ambidextrous,,,,,,,0,https://www.logitechg.com/zh-cn/shop/p/pro-x-superlight-wireless-mouse,罗技官方产品页
+10092558210376,wireless_2_4g,,1000,,,,,mechanical,GX红轴,TKL,87,,0,1,https://www.logitechg.com/zh-tw/shop/p/pro-x-tkl-wireless-keyboard.920-012140,罗技官方页与京东所选红轴规格
+100130429058,multi_mode,,1000,,,,,mechanical,GL矮轴T轴,TKL,87,1.3,0,1,https://www.logitechg.com/zh-cn/shop/p/g515-tkl-wireless-keyboard,罗技官方页与京东所选T轴规格
+100143576410,multi_mode,860,1000,,,,,mechanical,GL矮轴C轴,TKL,87,1.3,0,1,https://www.logitechg.com/en-gb/products/gaming-keyboards/g915-x-tkl-wireless.920-012755.html,罗技官方规格与京东所选C轴规格
+100068436132,wired,880,1000,,,,,optical,Razer第二代模拟光轴,100%,104,0.1,0,1,https://mysupport.razer.com/app/answers/detail/a_id/13671/,雷蛇官方支持页
+100112535804,wired,,1000,,,,,optical,Razer第二代模拟光轴,TKL,87,0.1,0,1,https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-tenkeyless,雷蛇官方产品页；该京东SKU为原1000Hz版本
+100068436130,wired,,1000,,,,,optical,Razer第二代模拟光轴,60%,61,0.1,0,1,https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro-mini,雷蛇官方产品页
+100064415234,wired,836,1000,,,,,optical,ROG RX红轴,100%,104,,0,1,https://rog.asus.com.cn/keyboards/keyboards/pbt-keycaps/rog-strix-scope-ii-rx/spec/,ROG官方规格
+100066734479,multi_mode,1012,1000,,,,,mechanical,ROG NX冰暴灰轴,96%,,,1,1,https://rog.asus.com.cn/keyboards/keyboards/pbt-keycaps/rog-strix-scope-ii-96-wireless/spec/,ROG官方规格
+100077377323,multi_mode,925,,,,,,mechanical,大师轴,98%,97,,1,1,https://cn.dareu.com/products/keyboard/a98editionwirelesskeyboard/,达尔优官方规格与京东所选轴体
+100070965890,multi_mode,706,,,,,,mechanical,梦遇HIFI轴,75%,81,,1,1,https://cn.dareu.com/?a=index&aid=894&c=View&m=home,达尔优官方规格
+100200260117,wired,740,8000,,,,,magnetic,磁轴,65%,68,0.01,1,1,https://cn.dareu.com/products/keyboard/cool68magneticaxiskeyboard/,达尔优官方规格
+100274881473,multi_mode,,8000,,,,,mechanical,奶牛Pro轴,98%,99,,1,1,https://vgnlab.com/blogs/guides/user-manual-for-vgn-v98-pro-v4-wireless-mechanical-keyboard,VGN官方手册与京东所选轴体；双8K版本
+100197744867,multi_mode,,1000,,,,,mechanical,,98%,99,,1,1,https://vgnlab.com/blogs/guides/user-manual-for-vgn-v98-pro-v3-wireless-mechanical-keyboard,VGN官方手册；1ms无线规格
+100036347936,multi_mode,88,1000,6400,AIM-WL,6,right,,,,,,,1,https://cn.dareu.com/?a=index&aid=958&c=View&m=home,达尔优官方A950三模版规格

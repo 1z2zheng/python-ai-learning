@@ -1,0 +1,38 @@
+[
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_123/best.pt"
+  },
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_2026/best.pt"
+  },
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_42/best.pt"
+  },
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_123/best.pt"
+  },
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_2026/best.pt"
+  },
+  {
+    "bytes": 386151,
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_42/best.pt"
+  },
+  {
+    "bytes": 66860703,
+    "path": "C260928003程序/runs/ablation_multiscale_seed123/best.pt"
+  },
+  {
+    "bytes": 66860703,
+    "path": "C260928003程序/runs/ablation_multiscale_seed2026/best.pt"
+  },
+  {
+    "bytes": 66860703,
+    "path": "C260928003程序/runs/ablation_multiscale_seed42/best.pt"
+  }
+]

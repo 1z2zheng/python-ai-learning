@@ -1,0 +1,38 @@
+[
+  {
+    "bytes": 28084369,
+    "path": "runs/deeplabv3plus_plantseg/best.pt"
+  },
+  {
+    "bytes": 17057934,
+    "path": "runs/mobilenet_v3_large_mixed/best.pt"
+  },
+  {
+    "bytes": 17057998,
+    "path": "runs/mobilenet_v3_large_mixed_clean_appleleaf9/best.pt"
+  },
+  {
+    "bytes": 17058190,
+    "path": "runs/mobilenet_v3_large_plantdoc/best.pt"
+  },
+  {
+    "bytes": 17058254,
+    "path": "runs/mobilenet_v3_large_refined/best.pt"
+  },
+  {
+    "bytes": 17058382,
+    "path": "runs/mobilenet_v3_large_refined_appleleaf9/best.pt"
+  },
+  {
+    "bytes": 6239586,
+    "path": "runs/mobilenet_v3_small/best.pt"
+  },
+  {
+    "bytes": 7816344,
+    "path": "runs/unet_apple_scab/best.pt"
+  },
+  {
+    "bytes": 7816408,
+    "path": "runs/unet_plantseg/best.pt"
+  }
+]

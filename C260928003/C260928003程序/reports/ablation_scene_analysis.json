@@ -1,0 +1,156 @@
+{
+  "group_definition": {
+    "darkest_25pct": "test images in the lowest luminance quartile",
+    "smallest_heads_25pct": "test images in the lowest median connected-component-area quartile",
+    "densest_25pct_proxy": "highest foreground-ratio quartile; a proxy for crowding/occlusion, not a manual occlusion label"
+  },
+  "groups": {
+    "darkest_25pct": [
+      "0c2d20111",
+      "13395ae85",
+      "18f8b24f1",
+      "218a99bee",
+      "3b70da460",
+      "48c72c991",
+      "6f119c82d",
+      "8f05b9e06",
+      "b58605092",
+      "d5943ea17",
+      "de9d781ae",
+      "f1b34145a",
+      "f20ba2db5"
+    ],
+    "smallest_heads_25pct": [
+      "09d50b59d",
+      "0c2d20111",
+      "27f0a8188",
+      "2ccb37ea9",
+      "31b00c1ad",
+      "3fa57b900",
+      "40cdb5389",
+      "744856d95",
+      "79ce67248",
+      "c66c3b651",
+      "f995095e2",
+      "fab41168b",
+      "fcf3194f7"
+    ],
+    "densest_25pct_proxy": [
+      "0c2d20111",
+      "2d8a88333",
+      "33d37a437",
+      "3b778c35e",
+      "a1321ca95",
+      "a4b64deca",
+      "b6b899073",
+      "b900ef546",
+      "d5943ea17",
+      "d9b373de2",
+      "f1b34145a",
+      "f20ba2db5",
+      "f995095e2"
+    ]
+  },
+  "experiments": {
+    "baseline": {
+      "darkest_25pct": {
+        "count": 13,
+        "mean_iou": 0.7662717726397056,
+        "mean_precision": 0.8896568886397248,
+        "mean_recall": 0.8327783411559049
+      },
+      "smallest_heads_25pct": {
+        "count": 13,
+        "mean_iou": 0.7079120691305166,
+        "mean_precision": 0.8227029764965249,
+        "mean_recall": 0.822322817615452
+      },
+      "densest_25pct_proxy": {
+        "count": 13,
+        "mean_iou": 0.8155588254664127,
+        "mean_precision": 0.9061291573848206,
+        "mean_recall": 0.8877445631993718
+      }
+    },
+    "lowlight": {
+      "darkest_25pct": {
+        "count": 13,
+        "mean_iou": 0.7629335637645425,
+        "mean_precision": 0.8787979077476517,
+        "mean_recall": 0.8401199961010042
+      },
+      "smallest_heads_25pct": {
+        "count": 13,
+        "mean_iou": 0.7130859070182113,
+        "mean_precision": 0.8060629616840771,
+        "mean_recall": 0.8455214244234536
+      },
+      "densest_25pct_proxy": {
+        "count": 13,
+        "mean_iou": 0.8222227769017876,
+        "mean_precision": 0.8944563835711448,
+        "mean_recall": 0.9080661399803456
+      }
+    },
+    "multiscale": {
+      "darkest_25pct": {
+        "count": 13,
+        "mean_iou": 0.7647733982395307,
+        "mean_precision": 0.8834508150014564,
+        "mean_recall": 0.8405802763794351
+      },
+      "smallest_heads_25pct": {
+        "count": 13,
+        "mean_iou": 0.7168796489538748,
+        "mean_precision": 0.8082949964920373,
+        "mean_recall": 0.8480262454916007
+      },
+      "densest_25pct_proxy": {
+        "count": 13,
+        "mean_iou": 0.8140397362493798,
+        "mean_precision": 0.8928206466839582,
+        "mean_recall": 0.8982150172210879
+      }
+    },
+    "occlusion": {
+      "darkest_25pct": {
+        "count": 13,
+        "mean_iou": 0.7627391620278464,
+        "mean_precision": 0.8795031411602046,
+        "mean_recall": 0.8397311628858048
+      },
+      "smallest_heads_25pct": {
+        "count": 13,
+        "mean_iou": 0.7054074273784686,
+        "mean_precision": 0.7988759727275241,
+        "mean_recall": 0.8432359346072871
+      },
+      "densest_25pct_proxy": {
+        "count": 13,
+        "mean_iou": 0.8181013676007202,
+        "mean_precision": 0.8993390050761094,
+        "mean_recall": 0.8971870034244722
+      }
+    },
+    "full": {
+      "darkest_25pct": {
+        "count": 13,
+        "mean_iou": 0.7592701047517868,
+        "mean_precision": 0.8886146496482955,
+        "mean_recall": 0.828871870646547
+      },
+      "smallest_heads_25pct": {
+        "count": 13,
+        "mean_iou": 0.6994222819210969,
+        "mean_precision": 0.8259472922505956,
+        "mean_recall": 0.8077194988695859
+      },
+      "densest_25pct_proxy": {
+        "count": 13,
+        "mean_iou": 0.8105588358672643,
+        "mean_precision": 0.9033475234191719,
+        "mean_recall": 0.8851553284459178
+      }
+    }
+  }
+}

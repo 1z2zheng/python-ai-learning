@@ -1,0 +1,21 @@
+{
+  "data_root": "wheat_head_dataset_500",
+  "output_dir": "runs/ablation_multiscale_seed2026",
+  "model": "multiscale_unet",
+  "num_classes": 2,
+  "class_names": ["background", "wheat_head"],
+  "channel_mode": "RGB",
+  "image_size": 384,
+  "base_channels": 24,
+  "batch_size": 4,
+  "epochs": 40,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "seed": 2026,
+  "device": "auto",
+  "amp": true,
+  "cross_entropy_weight": 1.0,
+  "dice_weight": 1.0,
+  "ignore_background_in_dice": true
+}
