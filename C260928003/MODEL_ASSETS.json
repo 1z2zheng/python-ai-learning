@@ -1,38 +1,65 @@
 [
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_123/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_123/best.pt"
+    "sha256": "8b79e7a3d54448a22b3e10b531fce18a1611ff8b81fa64dcfa4bb8fc48842731",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_2026/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_2026/best.pt"
+    "sha256": "8d4b4eec5c27398247353ac1c31332e6ac343349b0ce7723d47897a74828958e",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_42/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/growth/seed_42/best.pt"
+    "sha256": "33241f29617d0fd8657f7f565781255bebfa325703b8a74e85ed5744a60933fc",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_123/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_123/best.pt"
+    "sha256": "2af2dc847f2ee6b0919093e8a133907ce6decafdc1227d1ab48196b82f6bccc9",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_2026/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_2026/best.pt"
+    "sha256": "c526e1070c3ad4c593ead054c96da42c9c11b9ae9ae17764914ea35b45a79dda",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_42/best.pt",
     "bytes": 386151,
-    "path": "C260928003程序/outputs/spring_barley_multitask_5band/lodging/seed_42/best.pt"
+    "sha256": "0834b7dfeb5156aefc9880d55990076b377a7fe44653b1006654a89cc0cefc37",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/runs/ablation_multiscale_seed123/best.pt",
     "bytes": 66860703,
-    "path": "C260928003程序/runs/ablation_multiscale_seed123/best.pt"
+    "sha256": "a7a528c2ca03f6d4de86051bb3e0f64622d76a0458d34407b38c5a41ae59fc7b",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/runs/ablation_multiscale_seed2026/best.pt",
     "bytes": 66860703,
-    "path": "C260928003程序/runs/ablation_multiscale_seed2026/best.pt"
+    "sha256": "b5fc8d620b6c32195afe7a09fb2251cf8005aea2459629b524207dd27a949ef2",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "C260928003程序/runs/ablation_multiscale_seed42/best.pt",
     "bytes": 66860703,
-    "path": "C260928003程序/runs/ablation_multiscale_seed42/best.pt"
+    "sha256": "d31e4bd3592743aece821b3dd301aeaf86ca171010f5dbc609f92bbb631d7c62",
+    "required_for_app": true,
+    "included_in_repository": false
   }
 ]

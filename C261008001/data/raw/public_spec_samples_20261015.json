@@ -1,0 +1,31 @@
+{
+  "retrieved_date": "2026-10-15",
+  "method": "public_search_index_of_primary_retailer_page",
+  "freshness": "索引注明约1年前抓取；直连页未返回完整详情，不代表当前在售配置或实时价格",
+  "samples": [
+    {
+      "model_key": "razer_basilisk_v3_wired",
+      "category": "mouse",
+      "brand": "雷蛇",
+      "model_name": "巴塞利斯蛇V3有线版",
+      "source_sku": "10098016952114",
+      "source_url": "https://item.jd.com/10098016952114.html",
+      "attributes": {"商品编号": "10098016952114", "型号": "巴塞利斯蛇v3", "连接方式": "有线", "最高DPI": "10001-20000", "鼠标重量": "≥100g", "背光灯效": "RGB"},
+      "price": null,
+      "reviews": [],
+      "scope": "历史索引规格样本；不进入实时价、慢慢买历史价或严格评论统计"
+    },
+    {
+      "model_key": "logitech_g304_lightspeed",
+      "category": "mouse",
+      "brand": "罗技",
+      "model_name": "G304 LIGHTSPEED",
+      "source_sku": "7571300",
+      "source_url": "https://item.jd.com/7571300.html?rid=18970",
+      "attributes": {"商品编号": "7571300", "国补备案型号": "G304", "连接方式": "无线2.4G", "最高DPI": "10001-20000", "回报速率": "501-1000", "背光灯效": "无光"},
+      "price": null,
+      "reviews": [],
+      "scope": "历史索引规格样本；不进入实时价、慢慢买历史价或严格评论统计"
+    }
+  ]
+}

@@ -1,38 +1,65 @@
 [
   {
+    "path": "runs/deeplabv3plus_plantseg/best.pt",
     "bytes": 28084369,
-    "path": "runs/deeplabv3plus_plantseg/best.pt"
+    "sha256": "538025a05222f72ee91d1f28a770bc0a5f36370258e8d1b477fc13b139e52406",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_large_mixed/best.pt",
     "bytes": 17057934,
-    "path": "runs/mobilenet_v3_large_mixed/best.pt"
+    "sha256": "6cda3af7d165266de73a50a8427f5ac62532eb6ff886f8d147faa0ddae7936d7",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_large_mixed_clean_appleleaf9/best.pt",
     "bytes": 17057998,
-    "path": "runs/mobilenet_v3_large_mixed_clean_appleleaf9/best.pt"
+    "sha256": "68bf5326131582809d18dd761126ec77654101740b940c99515a58345d8d4ffd",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_large_plantdoc/best.pt",
     "bytes": 17058190,
-    "path": "runs/mobilenet_v3_large_plantdoc/best.pt"
+    "sha256": "12fce655299a6f368645a83ea0bb4eaa3ed3f483c1ca45b1cadcfe6f2af56955",
+    "required_for_app": true,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_large_refined/best.pt",
     "bytes": 17058254,
-    "path": "runs/mobilenet_v3_large_refined/best.pt"
+    "sha256": "f9ab251dd5d0f9f3e0f1a9a23a97b27752aeced7b8a6567d06fb0e0e2e557b58",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_large_refined_appleleaf9/best.pt",
     "bytes": 17058382,
-    "path": "runs/mobilenet_v3_large_refined_appleleaf9/best.pt"
+    "sha256": "97e9508d8ae5008992141a6be0520fed393f57826e8ce843e23de2fad1ecf5d1",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/mobilenet_v3_small/best.pt",
     "bytes": 6239586,
-    "path": "runs/mobilenet_v3_small/best.pt"
+    "sha256": "e99abd47531656b39d287171525b2eea05007e925e952df77a1edf6adcc93a2f",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/unet_apple_scab/best.pt",
     "bytes": 7816344,
-    "path": "runs/unet_apple_scab/best.pt"
+    "sha256": "b2ef3ed1c6378f5015b13c43a7e1140fc29a35a9b5d77b27d6a18a2186c59dc6",
+    "required_for_app": false,
+    "included_in_repository": false
   },
   {
+    "path": "runs/unet_plantseg/best.pt",
     "bytes": 7816408,
-    "path": "runs/unet_plantseg/best.pt"
+    "sha256": "5105f9878afb1bf3dac2e425c30190cb0e28523d65022e919cff1a05538ebaa5",
+    "required_for_app": false,
+    "included_in_repository": false
   }
 ]

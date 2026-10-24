@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+import os
 
 import streamlit as st
 
@@ -25,6 +26,8 @@ summary = get_database_summary(database_path)
 
 st.title("电竞外设竞品定价与偏好可视化系统")
 st.caption("查看竞品数据、参数匹配与历史报价，管理评论复核和数据质量。")
+if os.getenv("PORTFOLIO_DEMO") == "1":
+    st.info("演示模式：80 个合成商品、240 条价格快照，用于体验分析功能，非真实市场数据。评论与跨平台核验功能需要另行导入真实数据。")
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("全部目录记录（含测试数据）", summary["product_count"])

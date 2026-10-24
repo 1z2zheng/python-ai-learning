@@ -16,3 +16,6 @@ logs/*
 output/*.inspect.ndjson
 output/previews_*/
 
+
+# Small public fixture needed by tests
+!data/raw/public_spec_samples_20261015.json

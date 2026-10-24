@@ -352,7 +352,7 @@ missing_analysis_files = [path for path in required_analysis_files if not path.e
 
 if missing_analysis_files:
     st.info("六维评论偏好数据尚未生成。运行评论分析脚本后即可查看。")
-    st.code(r"D:\anaconda\python.exe scripts\analyze_review_preferences.py")
+    st.code("python scripts/analyze_review_preferences.py")
 else:
     (
         review_analysis_summary,

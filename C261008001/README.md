@@ -1,76 +1,65 @@
-# 电竞键鼠竞品定价与偏好分析系统
+# 电竞外设竞品定价与偏好分析系统
 
-基于 Python、SQLite、Streamlit 和 Plotly 的毕业设计项目，用于分析电竞鼠标、键盘的价格走势、产品规格、评价热度、用户偏好和竞品定位。
+将键鼠商品参数、历史报价与评论证据接入 SQLite，通过 Streamlit 页面完成数据筛选、偏好匹配、定价分析和竞品比较。
 
-## 已实现功能
+![数据概览演示](../docs/assets/esports-overview.png)
 
-- 京东与天猫同型号价格对比
-- 慢慢买历史价格导入与价格波动分析
-- DPI、重量、回报率、轴体、配列等规格对比
-- 评价数热度代理、脱敏评论、情感和优缺点分析
-- 六维偏好评分、价格带、促销与竞品定位
-- CSV 校验导入、数据质量检查和系统验收
+图中为合成演示数据，不代表真实市场数据。正式数据分析保留来源、版本冲突和研究口径，不把评价数直接当销量，也不把规则评分包装为用户真实偏好。
 
-评价数属于热度代理，不等同于实际销量；评论样本用于探索性分析，不代表平台全部用户。
+## 可以体验什么
 
-## 快速运行
+- 数据概览：类别、平台、品牌与价格区间筛选。
+- 偏好匹配：可调整六维权重，查看排名、得分条形图与雷达图。
+- 定价与促销分析：报价走势、价格带与优惠情况。
+- 竞品比较：参数、报价和候选型号比较。
+- 数据维护：CSV 校验导入、评论复核、证据追溯与系统验收。
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe scripts\init_db.py
-.\.venv\Scripts\python.exe -m streamlit run app.py
-```
+## 快速体验
 
-浏览器打开 `http://127.0.0.1:8501`。
-
-运行测试：
+Python 3.12，进入本目录后执行：
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q
+py -3.12 -m venv .venv
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe demo.py
 ```
 
-## 数据更新
+默认地址为 `http://localhost:8501`。也可指定 `python demo.py --port 8502`。macOS / Linux 使用 `python3 -m venv .venv`，将解释器路径替换为 `.venv/bin/python`。
 
-更新京东历史价格：
+`demo.py` 会在独立的 `data/demo.db` 中准备 80 个合成商品、240 条报价快照，不使用正式库；该样例没有真实评论、平台销量或经过核验的跨平台研究记录。对应模块在缺少数据时会提示补充数据。
+
+## 使用正式数据
+
+进入本目录，使用安装好依赖的 Python：
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\import_manmanbuy_history.py --provider official-web
+python scripts/init_db.py
+python scripts/import_csv.py data/seed/products_sample.csv
+python -m streamlit run app.py
 ```
 
-更新天猫配对样本：
+默认业务库为 `data/esports_analysis.db`，可用 `ESPORTS_DB_PATH` 覆盖。仓库没有上传个人业务数据库、原始评论下载或登录会话。采集与研究口径详见 [项目说明](docs/项目说明.md) 和 [浏览器采集适配器](historical-price-spider/README.md)。平台采集需要自行登录；遇到验证码或限流应停止采集。
+
+`data/processed` 保留已有处理结果；正式评论分析还需要相应的业务库记录与分析输出。演示数据只用于功能体验，不能用于研究结论。
+
+## 验证
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\import_manmanbuy_history.py `
-  --targets data\manmanbuy\tmall_cross_platform_targets.csv `
-  --output data\processed\manmanbuy_tmall_history.csv `
-  --log logs\manmanbuy_tmall_history.json `
-  --provider official-web
+python demo.py --prepare-only
+python -m pytest tests -q -p no:cacheprovider
 ```
 
-采集京东公开评价与商品属性后导入：
+2026-10-24 在独立源码副本上运行：**73 项测试通过**；演示数据校验和浏览器页面检查通过。[验证记录](../docs/verification.md)说明了环境与边界。
 
-```powershell
-node historical-price-spider\collect_jd_research_data.mjs `
-  data\manmanbuy\esports_targets.csv `
-  data\raw\jd_research_20261009.json
+## 代码结构
 
-.\.venv\Scripts\python.exe scripts\import_jd_research_data.py
-```
+| 路径 | 内容 |
+| --- | --- |
+| `app.py`、`pages/` | 首页与九个分析/管理页面 |
+| `src/esports_analysis/` | 数据库、数据清洗、评分、价格分析和评论处理 |
+| `scripts/` | 数据导入、采集、分析与验收工具 |
+| `data/seed/` | CSV 模板和合成演示样例 |
+| `tests/` | 数据处理与页面自动化检查 |
+| `demo.py` | 独立演示库准备与启动入口 |
 
-慢慢买和京东页面采集均使用用户手动登录的专用 Edge 会话，不保存或输出账号、密码和 Cookie。遇到验证码、登录失效或平台频控时停止采集。
-
-## 项目结构
-
-```text
-app.py                       Streamlit 入口
-pages/                       分析页面
-src/esports_analysis/        数据库与分析逻辑
-scripts/                     导入、采集和验收脚本
-data/                        目标表、原始数据、处理数据和数据库
-historical-price-spider/     浏览器采集适配器
-tests/                       自动化测试
-docs/项目说明.md             数据口径、架构和研究限制
-output/                      答辩、数据集和验收交付物
-```
-
-默认数据库为 `data/esports_analysis.db`。可通过环境变量 `ESPORTS_DB_PATH` 指定其他数据库。
+规则评分、评论情感与采集覆盖均有适用范围；不声称已完成商业上线、真实用户验证或自动化交易。
